@@ -210,7 +210,6 @@ void setMemory(int memoryId, int pin, int inverted) {
 
     if ((ditPressed || dahPressed) && spaceStarted) {
       // record a space
-      //unsigned long spaceDuration = millis() - spaceStarted;
       double spaceDuration = millis() - spaceStarted;
       spaceDuration /= ditMillis;
       spaceDuration += 2.5;
